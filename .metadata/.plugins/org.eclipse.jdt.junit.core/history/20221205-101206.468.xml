@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="StringTest" project="junit5" tests="2" started="2" failures="0" errors="0" ignored="0">
-  <testsuite name="com.oreilly.junit5.StringTest" time="0.041" displayname="StringTest" uniqueid="[engine:junit-jupiter]/[class:com.oreilly.junit5.StringTest]">
-    <testcase name="toUpperCase" classname="com.oreilly.junit5.StringTest" time="0.036" displayname="toUpperCase()" uniqueid="[engine:junit-jupiter]/[class:com.oreilly.junit5.StringTest]/[method:toUpperCase()]"/>
-    <testcase name="lengthBasic" classname="com.oreilly.junit5.StringTest" time="0.002" displayname="lengthBasic()" uniqueid="[engine:junit-jupiter]/[class:com.oreilly.junit5.StringTest]/[method:lengthBasic()]"/>
-  </testsuite>
-</testrun>

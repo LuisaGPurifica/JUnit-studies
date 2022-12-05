@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract local variable &apos;string&apos; from expression &apos;&quot;ABCD&quot;&apos;&#x0D;&#x0A;- Original project: &apos;junit5&apos;&#x0D;&#x0A;- Variable name: &apos;string&apos;&#x0D;&#x0A;- Destination method: &apos;com.oreilly.junit5.StringTest.lengthException()&apos;&#x0D;&#x0A;- Variable expression: &apos;&quot;ABCD&quot;&apos;&#x0D;&#x0A;- Replace occurrences of expression with variable" description="Extract local variable &apos;string&apos;" final="false" id="org.eclipse.jdt.ui.extract.temp" input="/src&lt;com.oreilly.junit5{StringTest.java" name="string" replace="true" selection="1371 0" stamp="1670250012902" varType="false" version="1.0"/>
+</session>

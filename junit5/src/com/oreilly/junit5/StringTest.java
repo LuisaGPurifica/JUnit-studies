@@ -3,24 +3,37 @@ package com.oreilly.junit5;
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestInfo;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
+import org.junit.jupiter.params.provider.ValueSource;
 
 class StringTest {
 
-	@BeforeEach // in JUnit 4 was called @Before
-	void beforeEach(TestInfo info) {
-		System.out.println("Initialize Test Data for " + info.getDisplayName());
-	}
-
-	@AfterEach // in JUnit 4 was called @After
-	void afterEach(TestInfo info) {
-		System.out.println("Clean test data for " + info.getDisplayName());
-	}
+//	@BeforeAll
+//	static void beforeAll() {
+//		System.out.println("Initialize connection to database");
+//	}
+//
+//	@AfterAll
+//	static void afterAll() {
+//		System.out.println("Close connection to database");
+//	}
+//
+//	@BeforeEach // in JUnit 4 was called @Before
+//	void beforeEach(TestInfo info) {
+//		System.out.println("Initialize Test Data for " + info.getDisplayName());
+//	}
+//
+//	@AfterEach // in JUnit 4 was called @After
+//	void afterEach(TestInfo info) {
+//		System.out.println("Clean test data for " + info.getDisplayName());
+//	}
 
 	// You can call the method whatever you want, as long as it is annotated with
 	// @Test, it is a test
@@ -35,6 +48,42 @@ class StringTest {
 		// Write test code
 		// Invoke method - ex: square(4) => this is called CUT - Code Under Test
 		// Checks in place - ex: 16 => checks are called ASSERTIONS
+	}
+
+	@Test
+	void lengthGreaterThanZero() {
+		assertTrue("ABCD".length() > 0);
+		assertTrue("ABC".length() > 0);
+		assertTrue("A".length() > 0);
+		assertTrue("DEF".length() > 0);
+	}
+
+	@ParameterizedTest
+	@ValueSource(strings = { "ABCD", "ABC", "A", "DEF" })
+	void lengthGreaterThanZeroUsingParameterizedTest(String str) {
+		assertTrue(str.length() > 0);
+	}
+
+	@ParameterizedTest(name = "{0} to uppercase is {1}")
+	@CsvSource(value = { "abcd, ABCD", "abc, ABC", "'',''", "abcdefg, ABCDEFG" })
+	void uppercase(String word, String capitalizedWord) {
+		assertEquals(capitalizedWord, word.toUpperCase());
+	}
+
+	@ParameterizedTest(name = "{0} length is {1}")
+	@CsvSource(value = { "abcd, 4", "abc, 3", "'',0", "abcdefg, 7" })
+	void length(String word, int length) {
+		assertEquals(length, word.length());
+	}
+
+	@Test
+	@DisplayName("When length is null, throw an exception")
+	void lengthException() {
+		String string = null;
+
+		assertThrows(NullPointerException.class, () -> {
+			string.length();
+		});
 	}
 
 	@Test
