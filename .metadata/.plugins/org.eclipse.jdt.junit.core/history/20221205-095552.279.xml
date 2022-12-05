@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="StringTest" project="junit5" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="com.oreilly.junit5.StringTest" time="0.024" displayname="StringTest" uniqueid="[engine:junit-jupiter]/[class:com.oreilly.junit5.StringTest]">
+    <testcase name="whateverYouWant" classname="com.oreilly.junit5.StringTest" time="0.024" displayname="whateverYouWant()" uniqueid="[engine:junit-jupiter]/[class:com.oreilly.junit5.StringTest]/[method:whateverYouWant()]"/>
+  </testsuite>
+</testrun>
