@@ -141,7 +141,6 @@ class StringTest {
 	}
 
 	@Nested
-	@DisplayName("For an empty String")
 	class EmptyStringTests {
 
 		@BeforeEach
@@ -150,30 +149,13 @@ class StringTest {
 		}
 
 		@Test
-		@DisplayName("length should be zero")
 		void lengthIsZero() {
 			assertEquals(0, str.length());
 		}
 
 		@Test
-		@DisplayName("uppercase is empty")
 		void uppercaseIsEmpty() {
-			assertEquals("", str.toUpperCase());
-		}
-
-	}
-
-	@Nested
-	@DisplayName("For large Strings")
-	class LargeStringTests {
-
-		@BeforeEach
-		void setToALargeString() {
-			str = "kadkjjewfjakfkjdjfjjsmcmskmakakaoes";
-		}
-
-		@Test
-		void test() {
+			assertEquals("", str.toUpperCase ());
 		}
 
 	}

@@ -163,19 +163,4 @@ class StringTest {
 
 	}
 
-	@Nested
-	@DisplayName("For large Strings")
-	class LargeStringTests {
-
-		@BeforeEach
-		void setToALargeString() {
-			str = "kadkjjewfjakfkjdjfjjsmcmskmakakaoes";
-		}
-
-		@Test
-		void test() {
-		}
-
-	}
-
 }

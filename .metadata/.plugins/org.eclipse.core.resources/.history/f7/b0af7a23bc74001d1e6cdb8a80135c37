@@ -10,22 +10,17 @@ import static org.junit.jupiter.api.Assertions.assertTimeout;
 
 import java.time.Duration;
 
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestInfo;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.ValueSource;
 
 class StringTest {
-
+	
 	private String str;
 
 	@BeforeAll
@@ -139,43 +134,10 @@ class StringTest {
 
 		assertArrayEquals(expectedResult, result);
 	}
-
+	
 	@Nested
-	@DisplayName("For an empty String")
 	class EmptyStringTests {
-
-		@BeforeEach
-		void setToEmpty() {
-			str = "";
-		}
-
-		@Test
-		@DisplayName("length should be zero")
-		void lengthIsZero() {
-			assertEquals(0, str.length());
-		}
-
-		@Test
-		@DisplayName("uppercase is empty")
-		void uppercaseIsEmpty() {
-			assertEquals("", str.toUpperCase());
-		}
-
-	}
-
-	@Nested
-	@DisplayName("For large Strings")
-	class LargeStringTests {
-
-		@BeforeEach
-		void setToALargeString() {
-			str = "kadkjjewfjakfkjdjfjjsmcmskmakakaoes";
-		}
-
-		@Test
-		void test() {
-		}
-
+		
 	}
 
 }

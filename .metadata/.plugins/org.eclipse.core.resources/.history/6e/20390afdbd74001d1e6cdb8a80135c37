@@ -173,7 +173,8 @@ class StringTest {
 		}
 
 		@Test
-		void test() {
+		void lengthIsZero() {
+			assertEquals(0, str.length());
 		}
 
 	}

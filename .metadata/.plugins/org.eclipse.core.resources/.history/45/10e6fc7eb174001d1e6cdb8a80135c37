@@ -6,52 +6,38 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.junit.jupiter.api.Assertions.assertTimeout;
 
-import java.time.Duration;
-
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Nested;
-import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestInfo;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.ValueSource;
 
 class StringTest {
 
-	private String str;
-
-	@BeforeAll
-	static void beforeAll() {
-		System.out.println("Initialize connection to database");
-	}
-
-	@AfterAll
-	static void afterAll() {
-		System.out.println("Close connection to database");
-	}
-
-	@BeforeEach // in JUnit 4 was called @Before
-	void beforeEach(TestInfo info) {
-		System.out.println("Initialize Test Data for " + info.getDisplayName());
-	}
-
-	@AfterEach // in JUnit 4 was called @After
-	void afterEach(TestInfo info) {
-		System.out.println("Clean test data for " + info.getDisplayName());
-	}
+//	@BeforeAll
+//	static void beforeAll() {
+//		System.out.println("Initialize connection to database");
+//	}
+//
+//	@AfterAll
+//	static void afterAll() {
+//		System.out.println("Close connection to database");
+//	}
+//
+//	@BeforeEach // in JUnit 4 was called @Before
+//	void beforeEach(TestInfo info) {
+//		System.out.println("Initialize Test Data for " + info.getDisplayName());
+//	}
+//
+//	@AfterEach // in JUnit 4 was called @After
+//	void afterEach(TestInfo info) {
+//		System.out.println("Clean test data for " + info.getDisplayName());
+//	}
 
 	// You can call the method whatever you want, as long as it is annotated with
 	// @Test, it is a test
 	@Test
-	@Disabled // @Ignored
 	void lengthBasic() {
 		int actualLength = "ABCD".length();
 		int expectedLength = 4;
@@ -101,16 +87,6 @@ class StringTest {
 	}
 
 	@Test
-	void performanceTest() {
-		assertTimeout(Duration.ofSeconds(5), () -> {
-			for (int i = 0; i <= 1000000; i++) {
-				int j = i;
-				System.out.println(j);
-			}
-		});
-	}
-
-	@Test
 	void toUpperCase() {
 		String str = "abcd";
 		String result = str.toUpperCase();
@@ -120,7 +96,6 @@ class StringTest {
 	}
 
 	@Test
-	@RepeatedTest(10)
 	void containsBasic() {
 //		String str = "abcdefgh";
 //		boolean result = str.contains("ijk");
@@ -138,44 +113,6 @@ class StringTest {
 		String[] expectedResult = new String[] { "abc", "def", "ghi" };
 
 		assertArrayEquals(expectedResult, result);
-	}
-
-	@Nested
-	@DisplayName("For an empty String")
-	class EmptyStringTests {
-
-		@BeforeEach
-		void setToEmpty() {
-			str = "";
-		}
-
-		@Test
-		@DisplayName("length should be zero")
-		void lengthIsZero() {
-			assertEquals(0, str.length());
-		}
-
-		@Test
-		@DisplayName("uppercase is empty")
-		void uppercaseIsEmpty() {
-			assertEquals("", str.toUpperCase());
-		}
-
-	}
-
-	@Nested
-	@DisplayName("For large Strings")
-	class LargeStringTests {
-
-		@BeforeEach
-		void setToALargeString() {
-			str = "kadkjjewfjakfkjdjfjjsmcmskmakakaoes";
-		}
-
-		@Test
-		void test() {
-		}
-
 	}
 
 }

@@ -156,24 +156,8 @@ class StringTest {
 		}
 
 		@Test
-		@DisplayName("uppercase is empty")
 		void uppercaseIsEmpty() {
 			assertEquals("", str.toUpperCase());
-		}
-
-	}
-
-	@Nested
-	@DisplayName("For large Strings")
-	class LargeStringTests {
-
-		@BeforeEach
-		void setToALargeString() {
-			str = "kadkjjewfjakfkjdjfjjsmcmskmakakaoes";
-		}
-
-		@Test
-		void test() {
 		}
 
 	}
