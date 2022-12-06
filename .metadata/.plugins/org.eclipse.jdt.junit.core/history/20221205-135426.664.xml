@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="EmptyStringTests" project="junit5" tests="2" started="2" failures="0" errors="0" ignored="0">
-  <testsuite name="com.oreilly.junit5.StringTest" time="0.026" displayname="StringTest" uniqueid="[engine:junit-jupiter]/[class:com.oreilly.junit5.StringTest]">
-    <testsuite name="com.oreilly.junit5.StringTest$EmptyStringTests" time="0.026" displayname="For an empty String" uniqueid="[engine:junit-jupiter]/[class:com.oreilly.junit5.StringTest]/[nested-class:EmptyStringTests]">
-      <testcase name="lengthIsZero" classname="com.oreilly.junit5.StringTest.EmptyStringTests" time="0.02" displayname="length should be zero" uniqueid="[engine:junit-jupiter]/[class:com.oreilly.junit5.StringTest]/[nested-class:EmptyStringTests]/[method:lengthIsZero()]"/>
-      <testcase name="uppercaseIsEmpty" classname="com.oreilly.junit5.StringTest.EmptyStringTests" time="0.004" displayname="uppercase is empty" uniqueid="[engine:junit-jupiter]/[class:com.oreilly.junit5.StringTest]/[nested-class:EmptyStringTests]/[method:uppercaseIsEmpty()]"/>
-    </testsuite>
-  </testsuite>
-</testrun>

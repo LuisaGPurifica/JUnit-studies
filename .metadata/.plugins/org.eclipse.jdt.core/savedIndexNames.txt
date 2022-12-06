@@ -2,8 +2,8 @@ INDEX VERSION 1.131+C:\Users\018039631\Desktop\Projetos Java\Estudos\JUnit\.meta
 2621584811.index
 2800230713.index
 2632257877.index
-1055045016.index
 1616582512.index
+1055045016.index
 1849875447.index
 1865797976.index
 3426438763.index
@@ -16,5 +16,6 @@ INDEX VERSION 1.131+C:\Users\018039631\Desktop\Projetos Java\Estudos\JUnit\.meta
 1305630319.index
 2207338430.index
 4181662171.index
+391915494.index
 4059886066.index
 2190889665.index

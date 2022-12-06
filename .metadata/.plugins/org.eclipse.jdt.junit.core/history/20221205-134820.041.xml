@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="EmptyStringTests" project="junit5" tests="2" started="2" failures="0" errors="0" ignored="0">
-  <testsuite name="com.oreilly.junit5.StringTest" time="0.02" displayname="StringTest" uniqueid="[engine:junit-jupiter]/[class:com.oreilly.junit5.StringTest]">
-    <testsuite name="com.oreilly.junit5.StringTest$EmptyStringTests" time="0.019" displayname="EmptyStringTests" uniqueid="[engine:junit-jupiter]/[class:com.oreilly.junit5.StringTest]/[nested-class:EmptyStringTests]">
-      <testcase name="lengthIsZero" classname="com.oreilly.junit5.StringTest.EmptyStringTests" time="0.015" displayname="lengthIsZero()" uniqueid="[engine:junit-jupiter]/[class:com.oreilly.junit5.StringTest]/[nested-class:EmptyStringTests]/[method:lengthIsZero()]"/>
-      <testcase name="uppercaseIsEmpty" classname="com.oreilly.junit5.StringTest.EmptyStringTests" time="0.003" displayname="uppercaseIsEmpty()" uniqueid="[engine:junit-jupiter]/[class:com.oreilly.junit5.StringTest]/[nested-class:EmptyStringTests]/[method:uppercaseIsEmpty()]"/>
-    </testsuite>
-  </testsuite>
-</testrun>

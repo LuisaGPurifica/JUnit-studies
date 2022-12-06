@@ -5,9 +5,23 @@
     <fullyQualifiedTypeName name="org.junit.jupiter.api.TestInfo"/>
     <fullyQualifiedTypeName name="org.junit.jupiter.api.BeforeAll"/>
     <fullyQualifiedTypeName name="org.junit.jupiter.api.AfterAll"/>
-    <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
     <fullyQualifiedTypeName name="org.junit.jupiter.api.DisplayName"/>
     <fullyQualifiedTypeName name="org.junit.jupiter.params.ParameterizedTest"/>
     <fullyQualifiedTypeName name="org.junit.jupiter.params.provider.ValueSource"/>
     <fullyQualifiedTypeName name="org.junit.jupiter.params.provider.CsvSource"/>
+    <fullyQualifiedTypeName name="org.junit.Before"/>
+    <fullyQualifiedTypeName name="org.junit.After"/>
+    <fullyQualifiedTypeName name="org.junit.BeforeClass"/>
+    <fullyQualifiedTypeName name="org.junit.AfterClass"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
+    <fullyQualifiedTypeName name="org.junit.Test"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
+    <fullyQualifiedTypeName name="java.math.BigDecimal"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.in28minutes.junit.model.Currency"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="com.oreilly.junit4.model.Amount"/>
+    <fullyQualifiedTypeName name="com.oreilly.junit4.model.Product"/>
+    <fullyQualifiedTypeName name="com.oreilly.junit4.model.Currency"/>
 </qualifiedTypeNameHistroy>
